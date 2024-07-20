@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title> table demo </title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+   <style>
+      table,
+      tr,
+      th,
+      td {
+         border: 2px solid blue;
+      }
+
+      table,
+      tr,
+      th,
+      td {
+         border: 2px solid blue;
+         border-collapse: collapse;
+      }
+
+      th {
+         color: white;
+         background-color: cadetblue;
+      }
+
+      tr,
+      th {
+         height: 50px;
+         text-align: center;
+         /*horizontally*/
+         vertical-align: center;
+         /*vertically*/
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <table>
+      <tr>
+         <th> Items </th>
+         <th> Color </th>
+      </tr>
+      <tr>
+         <td> Gaming Keyboard</td>
+         <td> Black </td>
+      </tr>
+      <tr>
+         <td> Gaming Chairs </td>
+         <td> White </td>
+      </tr>
+
+   </table>
+
+   <table>
+
+      <tr>
+         <th> No </th>
+         <th> Items </th>
+         <th colspan="2"> Color </th>
+         <!-- Number of columns you want to merge -->
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td> Main Color </td>
+         <td> Secondary Color </td>
+      </tr>
+      <tr>
+         <td> 1 </td>
+         <td> Gaming Keyboard</td>
+         <td> Black </td>
+         <td> Blue </td>
+      </tr>
+
+   </table>
+
+   <table>
+      <tr>
+         <th rowspan="2"> No </th>
+         <th rowspan="2"> Items </th>
+         <th colspan="2"> Color </th>
+      </tr>
+      <tr>
+         <td> Main Color </td>
+         <td> Secondary Color </td>
+      </tr>
+      <tr>
+         <td> 1 </td>
+         <td> Gaming Keyboard</td>
+         <td> Black </td>
+         <td> Blue </td>
+      </tr>
+   </table>
+
+</body>
+
+</html>

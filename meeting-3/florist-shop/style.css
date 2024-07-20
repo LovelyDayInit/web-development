@@ -1,0 +1,118 @@
+h1,
+p {
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main-header {
+    background-image: linear-gradient(rgb(197, 141, 137), rgb(252, 232, 204));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+}
+
+.header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 14px 14px 0 14px;
+}
+
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    background-color: transparent
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(219, 84, 75);
+    padding: 15px;
+    float: left;
+}
+
+a:hover {
+    background-color: burlywood;
+}
+
+.jumbotron {
+    margin-top: 5%;
+}
+
+.title {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+    color: rgb(247, 184, 89);
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: gainsboro;
+    border-radius: 16px;
+}
+
+.portrait {
+    width: 260px;
+    height: 350px;
+}
+
+img {
+    border: 20px solid rgb(231, 133, 187);
+    border-radius: 16px;
+    box-shadow: 5px 5px;
+    opacity: 0.75;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+body {
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+}
+
+/* section {
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+} */
+
+h3,
+p {
+    text-align: center;
+    padding: 5px;
+    color: steelblue;
+}
