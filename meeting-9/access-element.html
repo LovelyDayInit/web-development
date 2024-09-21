@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> DOM: Access Element </title>
+  <style>
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p id="programmer">I am Programmer</p>
+  <script>
+    var result = document.getElementById("programmer").innerHTML;
+    console.log(result);
+  </script>
+
+  <p>I am a web developer</p>
+  <script>
+    var result = document.getElementsByTagName("p")[1].innerHTML;
+    console.log(result);
+  </script>
+
+  <p class="apps">I am a mobile app developer</p>
+  <script>
+    var result = document.getElementsByClassName("apps")[0].innerHTML;
+    console.log(result);
+  </script>
+
+  <p class="apps">I am a UI / UX designer</p>
+  <script>
+    var item = document.getElementsByClassName("apps").length;
+    var i;
+
+    console.log('looping...')
+    for (i = 0; i < item; i++) {
+      var result = document.getElementsByClassName("apps")[i].innerHTML;
+      console.log(result);
+    }
+
+    var result = document.getElementsByTagName("p")[1].innerHTML = "Hello Programmer !";
+
+
+  </script>
+
+  <h2 class="red">Hello Programmer </h2>
+  <script>
+    document.getElementsByTagName("p")[0].className = "blue";
+    document.getElementsByTagName("p")[1].style.color = "green";
+    document.getElementsByClassName("apps")[0].setAttribute("class", "blue")
+
+    //create a new p
+    var paragraph = document.createElement("P");
+    paragraph.innerHTML = "New Paragraph";
+    //add it to body HTML
+    document.body.appendChild(paragraph);
+
+    document.body.removeChild(paragraph);
+  </script>
+
+  <ul id="language"> <!-- parent -->
+    <li>Javascript</li> <!-- child -->
+    <li>Python</li> <!-- child -->
+    <li>Kotlin</li> <!-- child -->
+  </ul>
+  <script>
+    var list = document.getElementById("language");
+
+    var i;
+    for (i = 0; i < list.children.length; i++) {
+      console.log(list.children[i])
+    }
+    list.removeChild(list.childNodes[6]);
+  </script>
+
+  <button onclick="dayMode()"> Day </button>
+  <button onclick="nightMode()"> Night </button>
+  <script>
+    function dayMode() {
+      document.querySelector("body").style.color = "black";
+      document.querySelector("body").style.
+        backgroundColor = "white"
+    }
+    function nightMode() {
+      document.querySelector("body").style.color = "white";
+      document.querySelector("body").style.
+        backgroundColor = "black"
+    }
+  </script>
+
+</body>
+
+</html>

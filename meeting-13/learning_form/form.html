@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form">
+    <h3 class="title">Coding Competition <br> Enrollment 2024</h3>
+    <form action="result.html" target="blank" method="POST" autocomplete="on">
+      <label for="categories">Categories:</label>
+      <select autofocus required>
+        <option value="kids">Kids (8-10y)</option>
+        <option value="teens">Teens (11-13y)</option>
+        <option value="highschool">High School (14-16y)</option>
+        <option value="adult">Adult (17-21y)</option>
+      </select> <br> <br>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" readonly placeholder="Ex. Don Quixote" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" disabled placeholder="Ex. abcd1234@mail.com" required>
+
+      <textarea id="address" name="address" cols="30" rows="10" placeholder="Address" required></textarea>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="quantity" name="quantity" min="8" max="16" required>
+
+      <label for="birthdate">Birth Date</label>
+      <input type="date" id="date" name="date" min="2008-01-01" max="2016-12-31" required>
+
+      <label for="gender">Gender</label> <br>
+
+      <input type="radio" id="male" name="gender" value="male" class="check" required>
+      <label for="male">Male</label> <br>
+
+      <input type="radio" id="female" name="gender" value="female" class="check" required>
+      <label for="female">Female</label> <br>
+
+      <label for="document">Documents</label> <br>
+
+      <input type="checkbox" id="documents" name="option1" value="studentCard" class="check" required>
+      <label for="option1">Student Card</label> <br>
+
+      <input type="checkbox" id="documents" name="option2" value="biodata" class="check" required>
+      <label for="option2">Biodata</label> <br>
+
+      <input type="checkbox" id="documents" name="option3" value="contractForm" class="check" required>
+      <label for="option3">Contract Form</label>
+      <br>
+
+      <label for="file">Upload File</label>
+      <input type="file" id="file" name="file" multiple required>
+
+
+
+      <input type="submit" value="Submit" class="submit_btn">
+    </form>
+  </div>
+</body>
+
+</html>
